@@ -1,0 +1,187 @@
+{
+    "asr_configs": {
+        "chinese": {
+            "wenetspeech_test_net": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            },
+            "wenetspeech_test_meeting": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            },
+            "aishell1_test": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            },
+            "aishell2_test": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            },
+            "commonvoice_zh": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            },
+            "fleurs_zh": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            }
+        },
+        "english": {
+            "gigaspeech_test": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            },
+            "librispeech_test_clean": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            },
+            "librispeech_test_other": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            },
+            "librispeech_dev_clean": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            },
+            "librispeech_dev_other": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            },
+            "commonvoice_en": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            },
+            "voxpopuli_en": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            },
+            "fleurs_en": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            },
+            "peoples_speech_test": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            },
+            "spgispeech_test": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            },
+            "tedlium3_test": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            }
+        },
+        "other_languages": {
+            "commonvoice_yue": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            },
+            "commonvoice_fr": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Transcription!",
+                "suffix_system_prompt": ""
+            }
+        }
+    },
+    "qa_configs": {
+        "multiple_choice": {
+            "voicebench_mmsu": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Conversation!",
+                "suffix_system_prompt": ""
+            },
+            "voicebench_openbookqa": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Conversation!",
+                "suffix_system_prompt": ""
+            }
+        },
+        "short_answer": {
+            "audioqa1m": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Conversation!",
+                "suffix_system_prompt": ""
+            }
+        },
+        "open_ended": {
+            "voicebench_alpacaeval": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Conversation!",
+                "suffix_system_prompt": ""
+            },
+            "voicebench_bbh": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Conversation!",
+                "suffix_system_prompt": ""
+            },
+            "voicebench_sdqa": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Conversation!",
+                "suffix_system_prompt": ""
+            },
+            "voicebench_wildvoice": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Conversation!",
+                "suffix_system_prompt": ""
+            },
+            "voicebench_advbench": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Conversation!",
+                "suffix_system_prompt": ""
+            },
+            "voicebench_commoneval": {
+                "mode": "audio",
+                "prefix_system_prompt": "Streaming Audio Conversation!",
+                "suffix_system_prompt": ""
+            }
+        }
+    },
+    "video_configs": {
+        "caption": {
+            "livesports3k_cc": {
+                "mode": "video",
+                "prefix_system_prompt": "Streaming Vision Caption.\nTitle: {title}\n\nprevious: {previous}",
+                "suffix_system_prompt": ""
+            }
+        }
+    },
+    "omni_configs": {
+        "event_localization": {
+            "ovavel": {
+                "mode": "omni",
+                "prefix_system_prompt": "Instant Omni Conversation.\nconverter: OVAVEL_event_detection\nprompt_text: You will continuously monitor audio-visual events in this video. When an event starts, say '[event] begin'. When it ends, say '[event] end'. If multiple events occur simultaneously, separate them with commas.",
+                "suffix_system_prompt": "",
+                "pad_audio": true,
+                "pad_frame": true,
+                "_comment": "OV-AVEL: Open-Vocabulary Audio-Visual Event Localization (Duplex mode)"
+            },
+            "ovavel_test": {
+                "mode": "omni",
+                "prefix_system_prompt": "Instant Omni Conversation.\nconverter: OVAVEL_event_detection\nprompt_text: You will continuously monitor audio-visual events in this video. When an event starts, say '[event] begin'. When it ends, say '[event] end'. If multiple events occur simultaneously, separate them with commas.",
+                "suffix_system_prompt": "",
+                "pad_audio": true,
+                "pad_frame": true,
+                "_comment": "OV-AVEL Test: Full test set with base and novel categories"
+            }
+        }
+    }
+}

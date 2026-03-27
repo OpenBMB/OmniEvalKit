@@ -1,0 +1,523 @@
+{
+    "_description": "MiniCPM-O 统一生成配置（音频 + 多模态）",
+    
+    "asr_configs": {
+        "chinese": {
+            "wenetspeech_test_net": {
+                "user_prompt": "请准确转写语音内容。\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "wenetspeech_test_meeting": {
+                "user_prompt": "请准确转写会议语音。\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "aishell1_test": {
+                "user_prompt": "请准确转写会议语音。\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "aishell2_test": {
+                "user_prompt": "请准确转写会议语音。\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "kespeech_test": {
+                "user_prompt": "请准确转写会议语音。\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "commonvoice_zh": {
+                "user_prompt": "请细心听取音频内容，并将其准确转写出来。\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "fleurs_zh": {
+                "user_prompt": "请准确转写会议语音。\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            }
+        },
+        "english": {
+            "gigaspeech_test": {
+                "user_prompt": "Please listen to the audio carefully and transcribe it with high precision. Please output in lower case without punctuation.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "librispeech_test_clean": {
+                "user_prompt": "Please listen to the audio carefully and transcribe it with high precision. Please output in lower case without punctuation.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "librispeech_test_other": {
+                "user_prompt": "Please listen to the audio carefully and transcribe it with high precision. Please output in lower case without punctuation.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "librispeech_dev_clean": {
+                "user_prompt": "Please listen to the audio carefully and transcribe it with high precision. Please output in lower case without punctuation.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "librispeech_dev_other": {
+                "user_prompt": "Please listen to the audio carefully and transcribe it with high precision. Please output in lower case without punctuation.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "commonvoice_en": {
+                "user_prompt": "Please listen to the audio carefully and transcribe it with high precision.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "voxpopuli_en": {
+                "user_prompt": "Please listen to the audio carefully and transcribe it with high precision. Please output in lower case without punctuation.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "fleurs_en": {
+                "user_prompt": "Please listen to the audio carefully and transcribe it with high precision.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "peoples_speech_test": {
+                "user_prompt": "Please listen to the audio carefully and transcribe it with high precision.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "spgispeech_test": {
+                "user_prompt": "Please listen to the financial domain audio and transcribe it accurately.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "tedlium3_test": {
+                "user_prompt": "Please listen to the audio carefully and transcribe it with high precision. Please output in lower case without punctuation.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            }
+        },
+        "other_languages": {
+            "commonvoice_yue": {
+                "user_prompt": "請細心聽取音頻內容，並將其準確轉寫出來。\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 64,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "commonvoice_fr": {
+                "user_prompt": "Veuillez écouter attentivement l'audio et le transcrire avec précision.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 64,
+                "num_beams": 3,
+                "sampling": false
+            }
+        }
+    },
+
+    "qa_configs": {
+        "multiple_choice": {
+            "voicebench_mmsu": {
+                "user_prompt": "{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "voicebench_openbookqa": {
+                "user_prompt": "{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "voice_cmmlu": {
+                "user_prompt": "{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            }
+        },
+        "short_answer": {
+            "audio_trivia_qa": {
+                "user_prompt": "{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "audio_web_questions": {
+                "user_prompt": "{audio}",
+                "system_prompt": "",
+                "max_tokens": 128,
+                "num_beams": 3,
+                "sampling": false
+            }
+        },
+        "open_ended": {
+            "voicebench_alpacaeval": {
+                "user_prompt": "{audio}",
+                "system_prompt": "",
+                "max_tokens": 1024,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "voicebench_alpacaeval_full": {
+                "user_prompt": "{audio}",
+                "system_prompt": "",
+                "max_tokens": 1024,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "voicebench_bbh": {
+                "user_prompt": "{audio}",
+                "system_prompt": "",
+                "max_tokens": 1024,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "voicebench_sdqa": {
+                "user_prompt": "{audio}",
+                "system_prompt": "",
+                "max_tokens": 1024,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "voicebench_wildvoice": {
+                "user_prompt": "{audio}",
+                "system_prompt": "",
+                "max_tokens": 1024,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "voicebench_advbench": {
+                "user_prompt": "{audio}",
+                "system_prompt": "",
+                "max_tokens": 1024,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "voicebench_commoneval": {
+                "user_prompt": "{audio}",
+                "system_prompt": "",
+                "max_tokens": 1024,
+                "num_beams": 3,
+                "sampling": false
+            }
+        },
+        "yes_no": {
+            "voicebench_ifeval": {
+                "user_prompt": "{audio}",
+                "system_prompt": "",
+                "max_tokens": 256,
+                "num_beams": 3,
+                "sampling": false
+            }
+        }
+    },
+
+    "caption_configs": {
+        "audio_caption": {
+            "audiocaps_test": {
+                "user_prompt": "Prepare a detailed audio summary.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 256,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "clothocaption_test": {
+                "user_prompt": "Prepare a detailed audio summary.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 256,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "wavcaps_audioset_sl": {
+                "user_prompt": "Prepare a detailed audio summary.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 256,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "wavcaps_freesound": {
+                "user_prompt": "Prepare a detailed audio summary.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 256,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "wavcaps_soundbible": {
+                "user_prompt": "Prepare a detailed audio summary.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 256,
+                "num_beams": 3,
+                "sampling": false
+            }
+        }
+    },
+
+    "multitask_configs": {
+        "multiple_choice": {
+            "mmau_test_mini": {
+                "user_prompt": "{audio}\nCarefully read the following question and select the letter corresponding to the correct answer. Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+                "system_prompt": "",
+                "max_tokens": 256,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "mmsu_bench": {
+                "user_prompt": "{audio}\nCarefully read the following question and select the letter corresponding to the correct answer. Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+                "system_prompt": "",
+                "max_tokens": 256,
+                "num_beams": 3,
+                "sampling": false
+            },
+            "mmar_bench": {
+                "user_prompt": "{audio}\nCarefully read the following question and select the letter corresponding to the correct answer. Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+                "system_prompt": "",
+                "max_tokens": 256,
+                "num_beams": 3,
+                "sampling": false
+            }
+        }
+    },
+
+    "cls_config": {
+        "emo": {
+            "meld": {
+                "user_prompt": "Identify the speech content and speculate on the emotions and sentiment involved.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 256,
+                "num_beams": 3,
+                "sampling": false
+            }
+        },
+        "sound": {
+            "vocalsound": {
+                "user_prompt": "Based on what this speaker has said, infer their gender, physical state, age range, and health condition.\n{audio}",
+                "system_prompt": "",
+                "max_tokens": 256,
+                "num_beams": 3,
+                "sampling": false
+            }
+        }
+    },
+
+    "ast_configs": {
+        "covost2_zh_en": {
+            "user_prompt": "Please recognize the language in the audio and translate it into English.\n{audio}",
+            "system_prompt": "",
+            "max_tokens": 256,
+            "num_beams": 3,
+            "sampling": false
+        },
+        "covost2_en_zh": {
+            "user_prompt": "请将音频内容识别出来并翻译成中文。\n{audio}",
+            "system_prompt": "",
+            "max_tokens": 256,
+            "num_beams": 3,
+            "sampling": false
+        }
+    },
+
+    "omni_mcq": {
+        "daily_omni": {
+            "user_prompt": "{media}\nCarefully read the following question and select the letter corresponding to the correct answer.Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 64,
+            "max_fps": 1.0,
+            "load_av": true,
+            "interleave_fps": 1.0
+        },
+        "omnibench": {
+            "user_prompt": "{media}\nCarefully read the following question and select the letter corresponding to the correct answer.Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 64,
+            "max_fps": 1.0
+        },
+        "worldsense": {
+            "user_prompt": "{media}\nCarefully read the following question and select the letter corresponding to the correct answer.Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 64,
+            "max_fps": 1.0,
+            "load_av": true,
+            "interleave_fps": 1.0
+        },
+        "unobench_mc": {
+            "user_prompt": "Carefully read the following question and select the letter corresponding to the correct answer.Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 64,
+            "max_fps": 1.0,
+            "keep_placeholder": true
+        },
+        "av_odyssey": {
+            "user_prompt": "Carefully read the following question and select the letter corresponding to the correct answer.Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 64,
+            "max_fps": 1.0,
+            "keep_placeholder": true
+        },
+        "unobench": {
+            "user_prompt": "{question}",
+            "system_prompt": "",
+            "max_tokens": 512,
+            "max_frames": 64,
+            "max_fps": 1.0,
+            "keep_placeholder": true,
+            "interleave_fps": 1.0
+        },
+        "videomme": {
+            "user_prompt": "{media}\nCarefully read the following question and select the letter corresponding to the correct answer.Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 96,
+            "load_av": false
+        },
+        "videomme_short": {
+            "user_prompt": "{media}\nCarefully read the following question and select the letter corresponding to the correct answer.Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 64,
+            "load_av": true,
+            "interleave_fps": 1.0
+        },
+        "video_holmes": {
+            "user_prompt": "{media}\nCarefully read the following question and select the letter corresponding to the correct answer.Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 96,
+            "max_fps": 1.0,
+            "load_av": true
+        },
+        "avut_benchmark_human": {
+            "user_prompt": "{media}\nCarefully read the following question and select the letter corresponding to the correct answer.Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 96,
+            "max_fps": 1.0,
+            "load_av": true,
+            "interleave_fps": 1.0
+        },
+        "ovobench": {
+            "user_prompt": "{media}\nCarefully read the following question and select the letter corresponding to the correct answer.Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 96,
+            "max_fps": 1.0,
+            "load_av": false
+        },
+        "streamingbench_real": {
+            "user_prompt": "{media}\nCarefully read the following question and select the letter corresponding to the correct answer.Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 64,
+            "max_fps": 1.0,
+            "load_av": false
+        },
+        "streamingbench_omni_fix": {
+            "user_prompt": "{media}\nCarefully read the following question and select the letter corresponding to the correct answer.Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 96,
+            "max_fps": 1.0,
+            "interleave_fps": 1.0,
+            "load_av": true
+        },
+        "streamingbench_sqa": {
+            "user_prompt": "{media}\nCarefully read the following question and select the letter corresponding to the correct answer.Highlight the applicable choices without giving explanations.\n{sqa_context}\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 64,
+            "max_fps": 1.0,
+            "load_av": false
+        },
+        "jointavbench": {
+            "user_prompt": "{media}\nCarefully read the following question and select the letter corresponding to the correct answer.Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 64,
+            "max_fps": 1.0,
+            "load_av": true,
+            "interleave_fps": 1.0
+        },
+        "futureomni": {
+            "user_prompt": "{media}\nCarefully read the following question and select the letter corresponding to the correct answer.Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 64,
+            "max_fps": 1.0,
+            "load_av": true,
+            "interleave_fps": 1.0
+        },
+        "avmeme_full": {
+            "user_prompt": "{media}\nCarefully read the following question and select the letter corresponding to the correct answer. Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 64,
+            "max_fps": 1.0,
+            "load_av": true,
+            "interleave_fps": 1.0
+        },
+        "avmeme_main": {
+            "user_prompt": "{media}\nCarefully read the following question and select the letter corresponding to the correct answer. Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 64,
+            "max_fps": 1.0,
+            "load_av": true,
+            "interleave_fps": 1.0
+        }
+    },
+
+    "omni_others": {
+        "avut_benchmark_gemini": {
+            "user_prompt": "{media}\nCarefully read the following question and select the letter corresponding to the correct answer.Highlight the applicable choices without giving explanations.\n{question}\nOptions:\n{options}\nPlease select the correct answer from the options above. Only respond with the letter.",
+            "system_prompt": "",
+            "max_tokens": 128,
+            "max_frames": 64,
+            "max_fps": 1.0,
+            "load_av": true
+        }
+    }
+}

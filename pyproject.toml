@@ -1,0 +1,81 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "omnievalkit"
+version = "1.0.0"
+description = "全方位、多模态语言模型评测套件 (Omni-modal & Multi-modal LLM Evaluation Toolkit)"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+keywords = ["evaluation", "multimodal", "speech", "audio", "llm", "benchmark"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "jinja2",
+    "tqdm",
+    "requests",
+    "aiohttp",
+    "pyyaml",
+    "jsonlines",
+    "jiwer",
+    "sacrebleu==1.5.1",
+    "editdistance",
+    "scikit-learn",
+    "librosa",
+    "soundfile",
+    "datasets==3.6.0",
+    "more-itertools",
+    "pandas",
+    "zhconv",
+    "pycocoevalcap",
+    "regex",
+    "pydub",
+    "openpyxl",
+    "gdown",
+    "rich",
+    "langdetect",
+    "immutabledict",
+    "nltk==3.9.1",
+    "huggingface-hub",
+    "pyarrow",
+    "decord",
+    "transformers",
+    "pillow",
+    "absl-py",
+]
+
+[project.optional-dependencies]
+api = [
+    "openai>=1.0.0",
+    "dashscope",
+    "azure-core",
+    "websockets==12.0",
+]
+embedding = [
+    "sentence-transformers==2.7.0",
+]
+dev = [
+    "pytest",
+    "pre-commit",
+]
+all = [
+    "omnievalkit[api,embedding,dev]",
+]
+
+[project.urls]
+Homepage = "https://github.com/OpenBMB/OmniEvalKit"
+Repository = "https://github.com/OpenBMB/OmniEvalKit"
+Issues = "https://github.com/OpenBMB/OmniEvalKit/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["o_e_Kit"]

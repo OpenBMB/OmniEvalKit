@@ -1,0 +1,5 @@
+{
+    "audio_pool_step": 5,
+    "audio_chunk_length": -1,
+    "init_tts": false
+}
